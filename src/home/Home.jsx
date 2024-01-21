@@ -17,9 +17,9 @@ const Home = () => {
             </p>
           </div>
           <div className="uppercase flex pt-5">
-            <button className="outline px-6 py-2 hover:bg-black hover:text-white outline-black duration-150 ease-in-out font-bold">
+            <a className="outline px-6 py-2 hover:bg-black hover:text-white outline-black duration-150 ease-in-out font-bold" href="#breeds">
               READ MORE
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -18,7 +18,14 @@ module.exports = {
       },
       colors: {
         "main": "#619b26"
-      }
+      },
+      boxShadow: {
+        shadowCus: "0 0.2px 5px 0.2px #333333",
+        menu: "0 -1px 4px rgba(0, 0, 0, 0.15)",
+      },
+      borderRadius: {
+        navRadius: "1.5rem 1.5rem 0 0",
+      },
     },
   },
   plugins: [],

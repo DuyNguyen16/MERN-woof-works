@@ -12,7 +12,8 @@ export const mainContext = createContext({});
 function App() {
   const [dogs, setDogs] = useState();
   const breed = [];
-  const [type, setType] = useState("Mixed")
+  const [type, setType] = useState("Mixed");
+  const [tab, currentTab] = useState("home");
 
   const api = `https://api.thedogapi.com/v1/breeds?limit=300&has_breeds=true&api_key=${API_KEY}`;
 
@@ -21,7 +22,9 @@ function App() {
     setDogs,
     breed,
     type,
-    setType
+    setType,
+    tab,
+    currentTab,
   };
 
   useEffect(() => {
