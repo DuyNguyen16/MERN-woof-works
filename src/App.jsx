@@ -2,20 +2,26 @@ import { createContext, useEffect, useState } from "react";
 import Cards from "./components/Cards";
 import { API_KEY } from "../backend/api.jsx";
 import axios from "axios";
-import ImageSection from "./pages/ImageSection.jsx";
+import ImageSection from "./components/ImageSection.jsx";
 import Header from "./components/Header.jsx";
 import Home from "./home/Home.jsx";
+import BreedSection from "./breeds/BreedSection.jsx";
 
 export const mainContext = createContext({});
 
 function App() {
   const [dogs, setDogs] = useState();
+  const breed = [];
+  const [type, setType] = useState("Mixed")
 
-  const api = `https://api.thedogapi.com/v1/images/search?limit=10&has_breeds=true&api_key=${API_KEY}`;
+  const api = `https://api.thedogapi.com/v1/breeds?limit=300&has_breeds=true&api_key=${API_KEY}`;
 
   const context = {
     dogs,
     setDogs,
+    breed,
+    type,
+    setType
   };
 
   useEffect(() => {
@@ -24,6 +30,15 @@ function App() {
       .then((response) => {
         setDogs(response.data);
         console.log(response.data);
+        console.log(response.data.length);
+        response.data.map((dog) => {
+          if (breed.includes(dog.breed_group)) {
+          } else {
+            breed.push(dog.breed_group);
+          }
+        });
+
+        console.log(breed);
       })
       .catch((err) => console.log(err));
   }, []);
@@ -33,6 +48,7 @@ function App() {
       <Header />
       <main className="h-screen md:mt-20 mt-[4.5rem]">
         <Home />
+        <BreedSection />
       </main>
     </mainContext.Provider>
   );

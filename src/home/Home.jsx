@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="w-full bg-[url(src/assets/hero.jpg)] h-[80vh] md:h-[90vh] bg-no-repeat bg-cover start:max-md:bg-picture md:bg-contain xl:bg-cover">
+    <div className="w-full bg-[url(src/assets/hero.jpg)] h-[80vh] md:h-[90vh] bg-no-repeat bg-cover start:max-md:bg-picture md:bg-contain xl:bg-cover" id="home">
       <div className="w-full h-full flex justify-center flex-col lg:px-24 md:pb-48 lg:pb-32 md:px-16 pb-42">
         <div className="about md:w-[34rem] lg:w-[42rem] px-4 py-4 bg-light md:bg-lighter mx-3">
           <p className="md:text-[3rem] lg:text-[4rem] text-black font-bold text-[2.8rem]">Woof Works</p>
