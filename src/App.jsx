@@ -6,6 +6,7 @@ import ImageSection from "./components/ImageSection.jsx";
 import Header from "./components/Header.jsx";
 import Home from "./home/Home.jsx";
 import BreedSection from "./breeds/BreedSection.jsx";
+import Footer from "./footer/Footer.jsx";
 
 export const mainContext = createContext({});
 
@@ -33,7 +34,6 @@ function App() {
       .then((response) => {
         setDogs(response.data);
         console.log(response.data);
-        console.log(response.data.length);
         response.data.map((dog) => {
           if (breed.includes(dog.breed_group)) {
           } else {
@@ -52,6 +52,7 @@ function App() {
       <main className="h-screen md:mt-20 mt-[4.5rem]">
         <Home />
         <BreedSection />
+        <Footer />
       </main>
     </mainContext.Provider>
   );

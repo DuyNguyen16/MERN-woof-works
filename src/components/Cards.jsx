@@ -16,7 +16,9 @@ const Cards = ({ id, url, name, breed, bredFor }) => {
           <p className="font-bold">Bred For:</p>
           {!bredFor ? <p>Because why not?</p> : <p>{bredFor}</p>}
         </div>
-        <button className="bg-[#7ab730] rounded py-2 hover:bg-[#619b26] ease-in-out duration-200 text-white text-[1rem] font-bold">Read More</button>
+        <button className="bg-[#7ab730] rounded py-2 hover:bg-[#619b26] ease-in-out duration-200 text-white text-[1rem] font-bold">
+          Read More<i class="uil uil-arrow-right"></i>
+        </button>
       </div>
     </section>
   );

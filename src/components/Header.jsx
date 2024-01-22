@@ -48,7 +48,7 @@ const Header = () => {
                 href="#breeds"
                 onClick={() => context.currentTab("breeds")}
               >
-                Breeds
+                Breed Group
               </a>
             </li>
             <li>
