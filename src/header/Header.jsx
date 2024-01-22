@@ -9,7 +9,7 @@ const Header = () => {
   };
   const context = useContext(mainContext);
   return (
-    <header className="w-full fixed shadow-shadowCus top-[initial] md:top-0 px-12 md:px-20 py-5 h-22 bg-white start:max-md:bottom-0 start:max-md:left-[0] start:max-md:z-[100]">
+    <header className=" w-full fixed shadow-shadowCus top-[initial] md:top-0 px-12 md:px-20 py-5 h-22 bg-white start:max-md:bottom-0 start:max-md:left-[0] start:max-md:z-[100]">
       <nav className="flex justify-between items-center">
         <a
           className="font-bold cursor-pointer md:text-xl text-md tracking-wide text-lg"
@@ -68,9 +68,12 @@ const Header = () => {
             </li>
           </ul>
 
-          <div className="bg-[#7ab730] px-5 py-2 cursor-pointer text-white font-[600] rounded-md hover:bg-[#619b26] text-md ease-in-out duration-200 start:max-md:text-[1.5rem]">
+          <a
+            href="#contact"
+            className="bg-[#7ab730] px-5 py-2 cursor-pointer text-white font-[600] rounded-md hover:bg-[#619b26] text-md ease-in-out duration-200 start:max-md:text-[1.5rem]"
+          >
             Contact
-          </div>
+          </a>
           <i
             className="uil uil-times start:max-md:absolute start:max-md:right-[1.3rem] start:max-md:top-[0.5rem] text-[1.5rem] cursor-pointer start:max-md:block hidden"
             onClick={handleOnClick}

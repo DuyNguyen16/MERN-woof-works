@@ -8,6 +8,7 @@ import Home from "./home/Home.jsx";
 import BreedSection from "./breeds/BreedSection.jsx";
 import Footer from "./footer/Footer.jsx";
 import SearchSection from "./search/SearchSection.jsx";
+import Contact from "./contact/Contact.jsx";
 
 export const mainContext = createContext({});
 
@@ -47,10 +48,11 @@ function App() {
   return (
     <mainContext.Provider value={context}>
       <Header />
-      <main className="md:mt-20">
+      <main className="">
         <Home />
         <SearchSection />
         <BreedSection />
+        <Contact />
         <Footer />
       </main>
     </mainContext.Provider>

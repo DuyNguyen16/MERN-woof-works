@@ -7,7 +7,7 @@ const Cards = ({ id, url, name, breed, bredFor }) => {
       <div className="flex flex-col justify-between">
         <img
           src={url}
-          className="md:w-[230px] md:h-[200px] object-cover rounded cursor-pointer"
+          className="md:w-[230px] md:h-[200px] object-cover rounded"
         ></img>
         <div className="px-1 pb-2">
           <p className="font-bold text-lg pt-1 pb-1">{name}</p>
