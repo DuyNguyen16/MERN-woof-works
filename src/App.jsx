@@ -33,15 +33,12 @@ function App() {
       .get(api)
       .then((response) => {
         setDogs(response.data);
-        console.log(response.data);
         response.data.map((dog) => {
           if (breed.includes(dog.breed_group)) {
           } else {
             breed.push(dog.breed_group);
           }
         });
-
-        console.log(breed);
       })
       .catch((err) => console.log(err));
   }, []);

@@ -16,10 +16,10 @@
 }
 
 .boxing {
-  box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.45),
-25px 0px 20px -20px rgba(0,0,0,0.45),
-0px 25px 20px -20px rgba(0,0,0,0.45),
--25px 0px 20px -20px rgba(0,0,0,0.45);
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45),
+    25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+    0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+    -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
 }
 .words {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -27,4 +27,11 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.dog {
+  box-shadow: 0px 2px 55px -6px rgba(0,0,0,0.45),
+  25px 0px 0px -255px rgba(0,0,0,0.45),
+  0px 25px 20px -255px rgba(0,0,0,0.45),
+  -25px 0px 20px -255px rgba(0,0,0,0.45);
 }

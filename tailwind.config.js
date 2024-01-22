@@ -25,6 +25,8 @@ module.exports = {
       },
       borderRadius: {
         navRadius: "1.5rem 1.5rem 0 0",
+        picture: "0.375rem 0 0 0.375rem",
+        picture2: "0.375rem 0.375rem 0 0"
       },
     },
   },
