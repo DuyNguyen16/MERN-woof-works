@@ -5,15 +5,15 @@ const Header = () => {
   const [toggle, isToggle] = useState(false);
 
   const handleOnClick = () => {
-    isToggle(!toggle)
-  }
+    isToggle(!toggle);
+  };
   const context = useContext(mainContext);
   return (
     <header className="w-full fixed shadow-shadowCus top-[initial] md:top-0 px-12 md:px-20 py-5 h-22 bg-white start:max-md:bottom-0 start:max-md:left-[0] start:max-md:z-[100]">
       <nav className="flex justify-between items-center">
         <a
           className="font-bold cursor-pointer md:text-xl text-md tracking-wide text-lg"
-          href="index.html"
+          href="/"
         >
           Woof.Works
         </a>
@@ -38,19 +38,7 @@ const Header = () => {
                 Home
               </a>
             </li>
-            <li>
-              <a
-                className={
-                  context.tab === "breeds"
-                    ? `md:text-base font-[600] text-main ease-in-out duration-200 text-3xl`
-                    : `md:text-base font-[600] text-black hover:text-main ease-in-out duration-200 text-3xl`
-                }
-                href="#breeds"
-                onClick={() => context.currentTab("breeds")}
-              >
-                Breed Group
-              </a>
-            </li>
+
             <li>
               <a
                 className={
@@ -64,14 +52,34 @@ const Header = () => {
                 Search
               </a>
             </li>
+
+            <li>
+              <a
+                className={
+                  context.tab === "breeds"
+                    ? `md:text-base font-[600] text-main ease-in-out duration-200 text-3xl`
+                    : `md:text-base font-[600] text-black hover:text-main ease-in-out duration-200 text-3xl`
+                }
+                href="#breeds"
+                onClick={() => context.currentTab("breeds")}
+              >
+                Breed Group
+              </a>
+            </li>
           </ul>
 
           <div className="bg-[#7ab730] px-5 py-2 cursor-pointer text-white font-[600] rounded-md hover:bg-[#619b26] text-md ease-in-out duration-200 start:max-md:text-[1.5rem]">
             Contact
           </div>
-          <i className="uil uil-times start:max-md:absolute start:max-md:right-[1.3rem] start:max-md:top-[0.5rem] text-[1.5rem] cursor-pointer start:max-md:block hidden" onClick={handleOnClick}></i>
+          <i
+            className="uil uil-times start:max-md:absolute start:max-md:right-[1.3rem] start:max-md:top-[0.5rem] text-[1.5rem] cursor-pointer start:max-md:block hidden"
+            onClick={handleOnClick}
+          ></i>
         </div>
-        <i className="uil uil-align-justify md:hidden text-2xl cursor-pointer" onClick={handleOnClick}></i>
+        <i
+          className="uil uil-align-justify md:hidden text-2xl cursor-pointer"
+          onClick={handleOnClick}
+        ></i>
       </nav>
     </header>
   );

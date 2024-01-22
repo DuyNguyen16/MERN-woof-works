@@ -14,9 +14,8 @@ const AboutDog = () => {
         );
         const data = await res.json();
         setDog(data);
-        console.log(data);
       } catch (error) {
-        console.log(eroor);
+        console.log(error);
       }
     };
 
@@ -26,7 +25,7 @@ const AboutDog = () => {
     <section className="min-h-dvh flex justify-center w-full items-center px-8 py-8">
       {dog.map((item) => (
         <div
-          className="flex md:flex-row flex-col gap-8 shadow-lg md:pr-4 rounded-md dog"
+          className="flex md:flex-row flex-col gap-8 shadow-lg md:pr-4 rounded-md dog bg-white"
           key={item.id}
         >
           <div className="w-full md:w-[25rem]">

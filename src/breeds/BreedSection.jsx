@@ -42,9 +42,9 @@ const BreedSection = () => {
   ];
 
   return (
-    <div className="min-h-dvh pt-24" id="breeds">
+    <div className="min-h-dvh pt-16 md:pt-24" id="breeds">
       <div className="flex justify-center text-[2rem] pb-10 pt-2">
-        <h1 className="text-[3rem] font-bold">Dog Breed Group</h1>
+        <h1 className="text-[2.3rem] md:text-[3rem] font-bold">Dog Breed Group</h1>
       </div>
       <div></div>
       {!context.breed ? (
