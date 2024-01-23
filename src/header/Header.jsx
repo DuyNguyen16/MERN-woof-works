@@ -69,6 +69,7 @@ const Header = () => {
           </ul>
 
           <a
+          onClick={() => context.currentTab("contact")}
             href="#contact"
             className="bg-[#7ab730] px-5 py-2 cursor-pointer text-white font-[600] rounded-md hover:bg-[#619b26] text-md ease-in-out duration-200 start:max-md:text-[1.5rem]"
           >
