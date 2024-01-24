@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import { mainContext } from "../App";
+import image from "../assets/hero.png"
 
 const Home = () => {
   const context = useContext(mainContext);
   return (
     <section id="home" className="md:pt-20">
-      <div className="w-full bg-[url(src/assets/hero.png)] h-[80vh] md:h-[90vh] bg-no-repeat bg-cover start:max-md:bg-picture md:bg-contain xl:bg-cover">
+      <div className={`w-full back h-[80vh] md:h-[90vh] bg-no-repeat bg-cover start:max-md:bg-picture md:bg-contain xl:bg-cover`}>
         <div className="w-full h-full flex md:pt-20 lg:pt-36 pt-28 flex-col lg:px-24 md:pb-48 lg:pb-32 md:px-16 pb-42">
           <div className="about md:w-[34rem] lg:w-[42rem] px-4 py-4 bg-light md:bg-lighter mx-3">
             <p className="md:text-[3rem] lg:text-[4rem] text-black font-bold text-[2.8rem] words">

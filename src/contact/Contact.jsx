@@ -19,7 +19,7 @@ const Contact = () => {
       <div className="px-4 py-4 shadow-md start:max-md:w-full md:min-w-[40rem] rounded-sm bg-[#fafafa]">
         <div className="flex flex-row gap-1">
           <p className="text-[1.4rem] font-bold pb-4">Contact Us</p>
-          <img src="src\assets\dog_paw.png" className="w-5 h-5"></img>
+          <img src="public/dog_paw.png" className="w-5 h-5"></img>
         </div>
         <form onSubmit={handleSubmit} className="flex flex-col gap-3">
           <input

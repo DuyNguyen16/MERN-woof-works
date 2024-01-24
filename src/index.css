@@ -35,3 +35,7 @@ html {
     0px 25px 20px -255px rgba(0, 0, 0, 0.45),
     -25px 0px 20px -255px rgba(0, 0, 0, 0.45);
 }
+
+.back {
+  background-image: url(src\assets\hero.png);
+}
