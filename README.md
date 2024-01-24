@@ -1,7 +1,7 @@
 # Woof Works
 
 
-## (Live Demo)[https://woof-works.netlify.app/]
+## [Live Demo](https://woof-works.netlify.app/)
 
 <hr></hr>
 
