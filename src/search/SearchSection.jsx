@@ -7,8 +7,6 @@ const SearchSection = () => {
   const [result, setResult] = useState();
   const [dogs, setDogs] = useState();
 
-  const context = useContext(mainContext);
-
   useEffect(() => {
     const getRandomDog = async () => {
       try {

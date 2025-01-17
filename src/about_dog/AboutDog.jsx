@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { API_KEY } from "../../backend/api";
 
 const AboutDog = () => {
   const [dog, setDog] = useState([]);
