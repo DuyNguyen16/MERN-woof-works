@@ -1,6 +1,5 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { mainContext } from "../App";
-import image from "../assets/hero.png"
 
 const Home = () => {
   const context = useContext(mainContext);
