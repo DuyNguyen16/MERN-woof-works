@@ -1,14 +1,14 @@
 import { createContext, useEffect, useState } from "react";
-import Cards from "./components/Cards";
 import { API_KEY } from "../backend/api.jsx";
 import axios from "axios";
-import ImageSection from "./components/ImageSection.jsx";
 import Header from "./header/Header.jsx";
 import Home from "./home/Home.jsx";
 import BreedSection from "./breeds/BreedSection.jsx";
 import Footer from "./footer/Footer.jsx";
 import SearchSection from "./search/SearchSection.jsx";
 import Contact from "./contact/Contact.jsx";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const mainContext = createContext({});
 
@@ -36,10 +36,9 @@ function App() {
       .then((response) => {
         setDogs(response.data);
         response.data.map((dog) => {
-          if (breed.includes(dog.breed_group)) {
-          } else {
+          if (!breed.includes(dog.breed_group)) {
             breed.push(dog.breed_group);
-          }
+          }   
         });
       })
       .catch((err) => console.log(err));
@@ -47,6 +46,16 @@ function App() {
 
   return (
     <mainContext.Provider value={context}>
+<ToastContainer
+  position="top-right"
+  autoClose={3000}
+  hideProgressBar={false}
+  closeOnClick
+  pauseOnHover
+  draggable
+  theme="light"
+/>
+
       <Header />
       <main className="">
         <Home />

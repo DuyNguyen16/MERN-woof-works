@@ -1,7 +1,5 @@
-import React, { useContext, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Cards from "../components/Cards";
-import { mainContext } from "../App";
-
 const SearchSection = () => {
   const [input, setInput] = useState("");
   const [result, setResult] = useState();
@@ -15,7 +13,6 @@ const SearchSection = () => {
         );
         const data = await res.json();
         setDogs(data);
-        console.log(data);
       } catch (error) {
         console.log(error);
       }
